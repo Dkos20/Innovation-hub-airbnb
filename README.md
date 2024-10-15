@@ -3,7 +3,6 @@
 
 The idea of the project is to create a prototype of digital product and deploy it for beta testing.
 After brainstorming and discussing several promising ideas we decided to create a **tool for Airbnb users**.
-Presentation available [here](https://github.com/koliverdavera/innovation_hub_airbnb/tree/main/project%20presentation).
 
 ### Project description
 We created a web application to estimate the best price for accommodation per night (PPN - price per night). 
