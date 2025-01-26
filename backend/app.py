@@ -11,8 +11,7 @@ from typing import Tuple
 from data.database import create_db, DB_CONNECTION_STRING
 
 app = Flask(__name__)
-Cors = CORS(app)
-CORS(app, resources={r'/*': {'origins': '*'}}, CORS_SUPPORTS_CREDENTIALS=True)
+CORS(app, resources={r"/*": {"origins": "*"}}, supports_credentials=True)
 app.config['CORS_HEADERS'] = 'Content-Type'
 app.config["SECRET_KEY"] = "SECRET"
 app.config['SESSION_TYPE'] = 'filesystem'
@@ -117,4 +116,4 @@ if __name__ == '__main__':
     db_is_created = os.path.exists(DB_CONNECTION_STRING)
     if not db_is_created:
         create_db()
-    app.run(host='127.0.0.1', ssl_context="adhoc", port=5001)
+app.run(host='127.0.0.1', port=5001)
