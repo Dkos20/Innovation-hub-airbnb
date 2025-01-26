@@ -249,12 +249,12 @@ export default {
       this.isLoading = true;
       try {
         const response = await axios.get(
-          `https://maps.googleapis.com/maps/api/geocode/json?address=${this.address}&key=AIzaSyD35FhJYub5b9tpvWLc0csJil3oyuqgjNc`
+          `https://maps.googleapis.com/maps/api/geocode/json?address=${this.address}&key=YOUR_API_KEY:)`
         );
         this.longitude = response.data.results[0].geometry.location.lng;
         this.latitude = response.data.results[0].geometry.location.lat;
         const calculated_response = await axios.post(
-          "https://ac40-2a01-e0a-585-d830-d0ab-574e-7d8c-ff73.eu.ngrok.io/calculator",
+          "http://localhost:5001/calculator",
           {
             longitude: this.longitude,
             latitude: this.latitude,
