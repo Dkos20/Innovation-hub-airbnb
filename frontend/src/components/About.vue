@@ -30,7 +30,7 @@ export default {
           description: "A.I. developer",
         },
         {
-          id: 3,
+          id: 2,
           name: "Vera Koliverda",
           img: "/MicrosoftTeams-image.jpg",
           description: "Front-End developer",
