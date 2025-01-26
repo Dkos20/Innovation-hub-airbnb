@@ -27,19 +27,13 @@ export default {
           id: 1,
           name: "Dorijan Kos",
           img: "/Snapchat-37253659.jpg",
-          description: "Front-End developer",
-        },
-        {
-          id: 2,
-          name: "Aqsa Muzaffar Ahmed",
-          img: "/MicrosoftTeams-image (1).jpg",
-          description: "Back-End developer",
+          description: "A.I. developer",
         },
         {
           id: 3,
           name: "Vera Koliverda",
           img: "/MicrosoftTeams-image.jpg",
-          description: "A.I. developer",
+          description: "Front-End developer",
         },
       ],
     };
